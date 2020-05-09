@@ -1,0 +1,26 @@
+{
+  "name": "heroku-test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PardeepBaboria/Heroku-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PardeepBaboria/Heroku-test/issues"
+  },
+  "homepage": "https://github.com/PardeepBaboria/Heroku-test#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "^14.2.0"
+  }
+}
