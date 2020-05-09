@@ -6,12 +6,12 @@ const cors = require("cors");
 // Start express app
 const app = express();
 
-// app.use(cors());
+app.use(cors());
 // Access-Control-Allow-Origin *
 // api.natours.com, front-end natours.com
 app.use(
   cors({
-    origin: "http://www.apnidukaan.net.in",
+    origin: "http://www.apnidukaan.com",
   })
 );
 
