@@ -6,7 +6,7 @@ const cors = require("cors");
 // Start express app
 const app = express();
 
-app.use(cors());
+// app.use(cors());
 // Access-Control-Allow-Origin *
 // api.natours.com, front-end natours.com
 app.use(
@@ -15,8 +15,8 @@ app.use(
   })
 );
 
-app.options("*", cors());
-// app.options('/api/v1/tours/:id', cors());
+// app.options("*", cors());
+app.options("/api/v1/tours/:id", cors());
 
 app.use(express.static(path.join(__dirname, "public")));
 
