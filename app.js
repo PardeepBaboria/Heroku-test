@@ -23,5 +23,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", (req, res) => {
   res.status(200).sendFile(`${__dirname}/views/index.html`);
 });
+app.use("/login", (req, res) => {
+  res.status(200).sendFile(`${__dirname}/views/login.html`);
+});
 
 module.exports = app;
