@@ -20,10 +20,10 @@ app.options("*", cors());
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).sendFile(`${__dirname}/views/index.html`);
 });
-app.use("/login", (req, res) => {
+app.get("/login", (req, res) => {
   res.status(200).sendFile(`${__dirname}/views/login.html`);
 });
 
