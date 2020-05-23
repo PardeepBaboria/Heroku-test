@@ -21,10 +21,10 @@ app.options("*", cors());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.status(200).sendFile(`${__dirname}/views/index.html`);
+  res.status(200).sendFile(`${__dirname}/views/login.html`);
 });
 app.get("/login", (req, res) => {
-  res.status(200).sendFile(`${__dirname}/views/login.html`);
+  res.status(200).sendFile(`${__dirname}/views/index.html`);
 });
 
 module.exports = app;
